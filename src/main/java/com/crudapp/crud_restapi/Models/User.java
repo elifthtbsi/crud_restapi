@@ -19,6 +19,9 @@ public class User {
     @Column
     private int age;
 
+    @Column
+    private String department;
+
     public long getId(){
         return id;
     }
@@ -48,6 +51,14 @@ public class User {
 
     public void setAge(int age){
         this.age = age;
+    }
+
+    public String getDepartment(){
+        return department;
+    }
+
+    public void setDepartment(String department){
+        this.department = department;
     }
 
 }
